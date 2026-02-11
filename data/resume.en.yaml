@@ -1,0 +1,239 @@
+$schema: https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json
+basics:
+  name: Dimitri RANC
+  label: Backend & Cloud Software Engineer
+  birthDate: 1991-08-08
+  email: cv@dranc.dev
+  url: https://cv.dranc.dev
+  image: https://cv.dranc.dev/me.png
+  phone: '+33 6.'
+  location:
+    postalCode: '33800'
+    city: BORDEAUX
+    countryCode: FRANCE
+  summary: Backend & Cloud Software Engineer with 10 years of experience in cloud infrastructure design and DevOps, specializing in scalable and high-performance solutions (AWS, Azure, TypeScript, .NET).
+  profiles:
+    - network: GitHub
+      url: https://github.com/dranc
+      logo: github.png
+    - network: LinkedIn
+      url: https://www.linkedin.com/in/dranc/
+      logo: linkedin.png
+
+work:
+  - name: Online Services
+    logo: logo/ubisoft.png
+    location: Ubisoft Bordeaux
+    startDate: 2023-01-15
+    summary: Design and maintenance of cloud infrastructures for video games
+    highlights:
+      - Analysis, design, and maintenance of critical cloud services for Ubisoft games
+      - Ensuring scalability, reliability, and performance of social features (friendships, matchmaking, etc.)
+      - Close collaboration with production teams to ensure optimal user experience
+      - Focus on automation and monitoring
+    skills:
+      - Node.js, TypeScript, NestJS, Jest, Jasmine
+      - AWS, DynamoDB, SQS, Lambda, Kinesis, PostgreSQL, Redis
+      - Docker, GitLab CI/CD, Swagger, Grafana, Prometheus
+  - name: Project Q
+    logo: logo/projectq.png
+    location: Ubisoft Bordeaux
+    startDate: 2021-06-15
+    endDate: 2023-01-15
+    summary: Continuous integration and deployment for an Unreal Engine game
+    highlights:
+      - Responsible for continuous integration and deployment for Ubisoft's first game on Unreal Engine
+      - Implementation of TeamCity pipelines to automate testing and deployments
+      - Reduction of production blockages
+      - Development of generic tools reusable for future productions using Unreal Engine
+      - Collaboration with technical teams to ensure build compatibility and target environment stability
+    skills:
+      - Kotlin, C#, Unreal Engine, C++
+      - TeamCity, Perforce, CI/CD
+  - name: Hager Group
+    logo: logo/hager.png
+    location: Mission with Accenture
+    startDate: 2019-09-01
+    endDate: 2021-06-15
+    summary: Development and optimization of Cloud/IoT services for energy management
+    highlights:
+      - Development and maintenance of Cloud/IoT services dedicated to smart energy management
+      - Optimization of solar production via weather APIs
+      - Rewrite of critical services in .NET Core
+      - Improvement of performance and scalability
+      - Proactive monitoring of infrastructures
+    skills:
+      - ASP.NET Core, .NET Core
+      - Azure, Azure DevOps, Azure Function, Application Insight, CosmoDB, Terraform, IoT, Monitoring
+  - name: EDF
+    logo: logo/edf.png
+    location: Mission with Sopra Steria
+    startDate: 2017-04-01
+    endDate: 2019-09-30
+    summary: Modernization of a business application for hydroelectric plants
+    highlights:
+      - Evolutionary maintenance of a SharePoint application dedicated to hydroelectric plant management
+      - Partial redesign of the architecture to improve performance
+      - Migration to modern technologies
+      - Participation in business needs analysis and sprint planning
+    skills:
+      - SharePoint, ASP.NET, Entity Framework, Oracle
+      - jQuery, KendoUI
+  - name: Total
+    logo: logo/total.png
+    location: Mission with Sopra Steria
+    startDate: 2017-10-01
+    endDate: 2018-05-31
+    summary: Optimization of an oil forecasting application
+    highlights:
+      - Intervention on a critical project to reduce technical debt and develop new features
+      - Improvement of front-end performance
+      - Modernization of the user interface
+    skills:
+      - AngularJS, JavaScript
+      - Bootstrap, KendoUI
+  - name: Airbus BizLab
+    logo: logo/airbus.png
+    location: Mission with Sopra Steria
+    startDate: 2016-09-01
+    endDate: 2017-04-30
+    summary: Development of a mobile application for pilots
+    highlights:
+      - Design and development of a hybrid application to digitize Airbus pilots' flight procedures
+      - Active participation in architectural decisions and UX/UI design
+      - Automation of tests and builds
+    skills:
+      - Ionic, AngularJS, Hybrid applications
+      - Yeoman, Gulp, Karma
+  - name: Sopra Steria
+    logo: logo/soprasteria.png
+    startDate: 2016-04-01
+    endDate: 2016-09-30
+    summary: R&D Internship - Innovative projects (AI, 3D, mobile)
+    highlights:
+      - Development of innovative prototypes within the Innovation Lab
+      - 3D viewer for commercial use (Unity 3D)
+      - Military report analyzer with AI (demonstration to the Air Force)
+      - Exploration of emerging technologies for tablet applications
+    skills:
+      - Unity 3D, Xamarin, Objective-C
+      - Bootstrap
+  - name: Tiki Move
+    logo: logo/tikimove.png
+    startDate: 2011-04-01
+    endDate: 2011-06-30
+    summary: Internship DUT - Native mobile development
+    highlights:
+      - Development of native mobile applications for iOS and Android
+      - Participation in all stages of the project lifecycle, from design to publication
+      - Discovery of best practices in mobile UI/UX
+    skills:
+      - Android SDK, Objective-C, Native applications
+
+education:
+  - institution: Université de Bordeaux
+    logo: logo/bordeaux1.png
+    studyType: Master in Computer Science
+    area: Software Engineering
+    courses:
+      - Project Management
+      - Multicore/GPU Programming
+      - Bioinformatics
+      - Distributed Software Architectures
+      - Additional English course (CLES 2 level).
+  - institution: IUT Gradignan
+    logo: logo/iut.png
+    studyType: DUT in Computer Science
+    courses:
+      - Algorithms
+      - Databases
+      - Web and mobile development
+      - Networks.
+
+skills:
+  - name: Languages
+    keywords:
+      - TypeScript
+      - C#
+      - Kotlin
+      - JavaScript
+      - Dart
+      - Java
+      - C
+      - C++
+      - Objective-C
+      - HTML
+  - name: Databases
+    keywords:
+      - DynamoDB
+      - PostgreSQL
+      - MySQL
+      - CosmoDB
+      - Query optimization
+  - name: Frameworks & Libraries
+    keywords:
+      - Node.js
+      - NestJS
+      - .NET Core
+      - Flutter
+      - Hugo
+      - AngularJS
+      - Ionic
+      - Unity 3D
+      - VanillaJS
+  - name: Cloud & DevOps
+    keywords:
+      - AWS
+      - Azure
+      - Docker
+      - Terraform
+      - GitLab CI/CD
+      - IdentityServer
+      - Azure DevOps
+      - TeamCity
+  - name: Tools & Methodologies
+    keywords:
+      - Git
+      - Jira
+      - Open API
+      - Confluence
+      - Grafana
+      - Prometheus
+      - Agile/Scrum
+      - TDD
+  - name: Software Architecture & Best Practices
+    keywords:
+      - Clean Code
+      - DRY
+      - KISS
+      - Onion Architecture
+      - Postman
+      - Bruno
+  - name: Systems & Networking
+    keywords:
+      - Linux/Unix
+      - Bash/Shell
+      - Networking fundamentals
+      - Load balancing
+  - name: Languages
+    keywords:
+      - Fluent English (TOEIC 850, 6-month stay in Australia)
+
+interests:
+  - name: Software Development
+    keywords:
+      - Participation in competitions (Google Code Jam, BattleDev)
+      - Technological watch (Cloud, IoT)
+  - name: Self-hosting
+    keywords:
+      - Personal server management (Proxmox, Immich, Jellyfin)
+  - name: House Renovation
+    keywords:
+      - Electricity
+      - Plumbing
+      - Carpentry
+  - name: Sports
+    keywords:
+      - Running
+      - Squash
+      - Surfing

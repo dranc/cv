@@ -1,0 +1,19 @@
+interests: Intérêts
+skills: Compétences
+technical_env: Environnement technique
+education: Scolarités
+experiences: Expériences
+see_more: Voir plus
+see_less: Voir moins
+mail_subject: We want you!
+months_count:
+  one: '{{ . }} mois'
+  other: '{{ . }} mois'
+years_count:
+  one: '{{ .Count }}{{ if .Half }}½{{ end }} an'
+  other: '{{ .Count }}{{ if .Half }}½{{ end }} ans'
+now: ce jour
+date_to_date:
+  other: '{{ .start }} à {{ .end }}'
+generated_on:
+  other: 'Généré le {{ .Date }} à {{ .Time }}'

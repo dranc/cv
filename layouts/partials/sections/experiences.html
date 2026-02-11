@@ -1,0 +1,45 @@
+<div class="header">
+  <h2 class="title">
+    <span class="icon">🏢</span>
+    {{ i18n "experiences" }}
+  </h2>
+</div>
+<div class="content lines">
+  {{ range . }}
+  <div class="item not-breakable">
+    <div class="header">
+      <div class="inline">
+        <div class="inline">
+          <img class="logo" src="{{absURL .logo }}" alt="Logo de la société {{.company}}" />
+          <h2 class="important">{{.name}} <span class="less-important"> {{.location}} </span></h2>
+        </div>
+        <div class="right less-important">
+          {{ partial "shared/dates.html" (dict "start" .startDate "end" .endDate) }}
+        </div>
+      </div>
+    </div>
+    <div class="details">
+      <div>
+        <div class="description">
+          <p>{{.summary}}</p>
+        </div>
+        <ul>
+          {{ range .highlights }}
+          <li>{{.}}</li>
+          {{ end }}
+        </ul>
+      </div>
+      <div>
+        <u>{{ i18n "technical_env" }}</u>
+        <ul>
+          {{ range .skills }}
+          <li>
+            <i>{{.}}</i>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+  {{ end }}
+</div>

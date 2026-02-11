@@ -1,0 +1,24 @@
+<div class="header">
+  <h2 class="title">
+    <span class="icon">📖</span>
+    {{ i18n "education" }}
+  </h2>
+</div>
+<div class="content lines">
+  {{ range . }}
+  <div class="item">
+    <div class="header">
+      <div class="inline left">
+        <img class="logo" src="{{ absURL .logo }}" alt="Logo de {{.name}}" />
+        <h2 class="important">
+          {{ .studyType }}
+          <span class="less-important">{{ if .area }}{{ .area }} - {{end}} {{ .institution}}</span>
+        </h2>
+      </div>
+    </div>
+    <div class="details">
+      <p>{{ delimit .courses ", "}}</p>
+    </div>
+  </div>
+  {{ end }}
+</div>

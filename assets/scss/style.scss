@@ -1,0 +1,186 @@
+$primary-color: #396485;
+$background-color: #f4f4f4;
+$text-color: #333;
+$small-space: 10px;
+$space: $small-space * 3;
+$text-size: 16px;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $background-color;
+  text-decoration: none;
+}
+
+.blurry {
+  filter: blur($text-size / 3);
+  -webkit-filter: blur($text-size / 3);
+}
+
+.not-breakable {
+  page-break-inside: avoid;
+}
+
+.important {
+  color: $primary-color;
+  margin: $small-space;
+}
+
+.less-important {
+  font-size: 70%;
+  font-weight: normal;
+}
+
+.hoverable {
+  .hover {
+    display: none;
+  }
+  &:hover .hover {
+    display: initial;
+  }
+}
+
+.inline {
+  display: flex;
+  justify-content: space-between;
+
+  & > * {
+    align-self: center;
+  }
+
+  .right {
+    align-self: end;
+    text-align: right;
+  }
+
+  &.left {
+    justify-content: start;
+  }
+}
+
+body {
+  background-color: $background-color;
+  font-size: $text-size;
+  color: $text-color;
+  text-align: justify;
+  font-family: Arial, sans-serif;
+
+  @media only screen and (min-width: 992px) {
+    &.page {
+      width: 21cm;
+      min-height: 29.7cm;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      margin: 20px auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+header {
+  .info {
+    background-color: $primary-color;
+    color: $background-color;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    .name {
+      font-size: $text-size * 2;
+    }
+
+    .links {
+      padding-top: $small-space / 2;
+      justify-content: start;
+
+      .my-site {
+        padding: 0 10px;
+        font-weight: bold;
+      }
+    }
+
+    img#me {
+      height: $space * 7;
+    }
+  }
+
+  .main {
+    text-align: center;
+    margin: 10px;
+
+    .title {
+      color: $primary-color;
+      font-size: $text-size * 1.5;
+      margin: $small-space 0;
+    }
+
+    .description {
+      font-style: italic;
+    }
+  }
+}
+
+section {
+  > .header {
+    padding: $small-space/2 $space;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: $primary-color;
+    color: $background-color;
+
+    .title {
+      text-transform: uppercase;
+
+      .icon {
+        margin-right: $small-space;
+        font-size: 90%;
+      }
+    }
+  }
+
+  > .content {
+    .logo {
+      width: 40px;
+      padding: $small-space;
+    }
+
+    .item {
+      padding: $small-space;
+
+      &:hover {
+        background-color: lightgray;
+      }
+
+      .details {
+        margin-left: $space;
+
+        & > *:not(:first-child) {
+          padding-top: 10px;
+        }
+
+        .description {
+          font-weight: bold;
+          margin: $small-space / 2;
+        }
+
+        ul {
+          margin-left: $space;
+        }
+      }
+    }
+
+    &.columns {
+      display: flex;
+      flex-wrap: wrap;
+
+      .item {
+        flex: calc(50% - (#{$small-space} * 2));
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{{ $currentLang := .Site.Language.Lang}}
+{{ $resume := index .Site.Data (printf "resume.%s" $currentLang) }}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ $resume.basics.name }}</title>
+    <link rel="icon" type="image/x-icon" href="{{absURL "favicon.ico"}}" />
+    {{ $style := resources.Get "scss/style.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" />
+    <script async src="https://cdn.seline.com/seline.js" data-token="9be6b81da09cad9"></script>
+
+    <meta property="og:image" content="{{absURL "og.png"}}" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="512" />
+  </head>
+
+  <body class="page" size="A4">  
+
+    {{ partial "header.html" (dict "basics" $resume.basics "languages" .Site.Languages "currentLang" $currentLang) }}
+
+    <section class="not-breakable">{{ partial "sections/skills.html" $resume.skills }}</section>
+    <section>{{ partial "sections/experiences.html" $resume.work }}</section>
+    <section class="not-breakable">{{ partial "sections/education.html" $resume.education }}</section>
+    <section class="not-breakable">{{ partial "sections/interests.html" $resume.interests }}</section>
+    {{ $ts := resources.Get "ts/main.ts" | js.Build | fingerprint }}
+    <script src="{{ $ts.RelPermalink }}" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+defaultContentLanguage: fr
+languages:
+  fr:
+    languageName: 🇫🇷
+    weight: 1
+  en:
+    languageName: 🇬🇧
+    weight: 2

@@ -1,0 +1,18 @@
+interests: Interests
+skills: Skills
+education: Education
+experiences: Experiences
+see_more: See more
+see_less: See less
+mail_subject: We want you!
+months_count:
+  one: "{{ . }} month"
+  other: "{{ . }} months"
+years_count:
+  one: "{{ .Count }}{{ if .Half }}½{{ end }} year"
+  other: "{{ .Count }}{{ if .Half }}½{{ end }} years"
+now: now
+date_to_date:
+  other: "{{ .start }} to {{ .end }}"
+generated_on:
+  other: "Generated on {{ .Date }} at {{ .Time }}"

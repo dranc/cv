@@ -1,0 +1,41 @@
+<header>
+  <div class="info">
+    <div class="text">    
+      <h1 class="name">{{ .basics.name }}</h1>
+      <p id="a"><span class="blurry">You must be an Hacker!</span></p>
+      <p>{{ .basics.location.postalCode }} {{ .basics.location.city }}{{if .basics.location.countryCode}}, {{ .basics.location.countryCode }} {{end}}</p>
+      <p id="p">{{.basics.phone}}<span class="blurry">MR.RO.BO.T?</span></p>
+      <p><a href='mailto:{{ .basics.email }}?subject={{ i18n "mail_subject" }}'>{{ .basics.email }}</a></p>
+      <p title='{{ .basics.birthDate | time.Format ":date_medium" }}'>
+        {{ $now := now }} {{ $birth := time .basics.birthDate }} {{ $age := sub ($now.Year) ($birth.Year) }} {{ if or (lt
+        $now.Month $birth.Month) (and (eq $now.Month $birth.Month) (lt $now.Day $birth.Day)) }} {{ $age = sub $age 1 }} {{
+        end }} {{ $age }} ans
+      </p>
+      <div class="links inline">
+        <div>
+          {{ range .basics.profiles }}
+          <a href="{{.url}}" target="_blank">
+            <img height="16px" style="margin-top: 5px;" src="{{absURL .logo}}" alt="Logo {{.network}}" />
+          </a>
+          {{.username}} {{ end }}
+        </div>
+        
+        <div class="inline hoverable">
+          <a class="my-site" href="{{.basics.url}}">cv.dranc.dev</a>
+          <div class="hover">
+            {{ range .languages }}
+            <a href="{{absURL .Lang}}">{{.LanguageName}}</a>
+            {{ end }}
+          </div>
+          </div>
+      </div>
+    </div>
+    <div>
+      <img id="me" src="{{absURL "me.png"}}" alt="me" />
+    </div>
+  </div>
+  <div class="main">
+    <h1 id="t" class="title">{{ .basics.label }}</h1>
+    <p id="d" class="description">{{ .basics.summary }}</p>
+  </header>
+</div>

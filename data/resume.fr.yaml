@@ -1,0 +1,238 @@
+$schema: https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json
+basics:
+  name: Dimitri RANC
+  label: Ingénieur Logiciel Backend & Cloud
+  birthDate: 1991-08-08
+  email: cv@dranc.dev
+  url: https://cv.dranc.dev
+  image: https://cv.dranc.dev/me.png
+  phone: '06.'
+  location:
+    postalCode: '33800'
+    city: BORDEAUX
+  summary: Ingénieur Logiciel Backend & Cloud avec 10 ans d'expérience en conception d'infrastructures cloud et DevOps, spécialisé dans les solutions scalables et performantes (AWS, Azure, TypeScript, .NET).
+  profiles:
+    - network: GitHub
+      url: https://github.com/dranc
+      logo: github.png
+    - network: LinkedIn
+      url: https://www.linkedin.com/in/dranc/
+      logo: linkedin.png
+
+work:
+  - name: Online Services
+    logo: logo/ubisoft.png
+    location: Ubisoft Bordeaux
+    startDate: 2023-01-15
+    summary: Conception et maintenance d'infrastructures cloud pour les jeux vidéo
+    highlights:
+      - Analyse, design et maintenance des services cloud critiques pour les jeux Ubisoft
+      - Assurer la scalabilité, la fiabilité et la performance des fonctionnalités sociales (amitiés, matchmaking, etc.)
+      - Collaboration étroite avec les équipes de production pour garantir une expérience utilisateur optimale
+      - Focus sur l'automatisation et le monitoring
+    skills:
+      - Node.js, TypeScript, NestJS, Jest, Jasmine
+      - AWS, DynamoDB, SQS, Lambda, Kinesis, PostgreSQL, Redis
+      - Docker, GitLab CI/CD, Swagger, Grafana, Prometheus
+  - name: Project Q
+    logo: logo/projectq.png
+    location: Ubisoft Bordeaux
+    startDate: 2021-06-15
+    endDate: 2023-01-15
+    summary: Intégration et déploiement continu pour un jeu Unreal Engine
+    highlights:
+      - Responsable de l'intégration continue et du déploiement du premier jeu Ubisoft sur Unreal Engine
+      - Mise en place de pipelines Teamcity pour automatiser les tests et les déploiements
+      - Réduction des blocages de production
+      - Développement d'outils destinés à être réutilisés sur les futures productions utilisant Unreal Engine
+      - Collaboration avec les équipes techniques pour assurer la compatibilité des builds et la stabilité des environnements cibles
+    skills:
+      - Kotlin, C#, Unreal Engine, C++
+      - TeamCity, Perforce, CI/CD
+  - name: Hager Group
+    logo: logo/hager.png
+    location: Mission avec Accenture
+    startDate: 2019-09-01
+    endDate: 2021-06-15
+    summary: Développement et optimisation de services Cloud/IoT pour la gestion énergétique
+    highlights:
+      - Développement et maintenance de services Cloud/IoT dédiés à la gestion intelligente de l'énergie
+      - Optimisation de la production solaire via des APIs météo
+      - Réécriture de services critiques en .NET Core
+      - Amélioration de la performance et la scalabilité
+      - Surveillance proactive des infrastructures
+    skills:
+      - ASP.NET Core, .NET Core
+      - Azure, Azure DevOps, Azure Function, Application Insight, CosmoDB, Terraform, IoT, Monitoring
+  - name: EDF
+    logo: logo/edf.png
+    location: Mission avec Sopra Steria
+    startDate: 2017-04-01
+    endDate: 2019-09-30
+    summary: Modernisation d'une application métier pour les centrales hydrauliques
+    highlights:
+      - Maintenance évolutive d'une application SharePoint dédiée à la gestion des centrales hydrauliques
+      - Refonte partielle de l'architecture pour améliorer les performances
+      - Migration vers des technologies modernes
+      - Participation à l'analyse des besoins métiers et à la planification des sprints
+    skills:
+      - SharePoint, ASP.NET, Entity Framework, Oracle
+      - jQuery, KendoUI
+  - name: Total
+    logo: logo/total.png
+    location: Mission avec Sopra Steria
+    startDate: 2017-10-01
+    endDate: 2018-05-31
+    summary: Optimisation d'une application de prévision pétrolière
+    highlights:
+      - Intervention sur un projet critique pour réduire la dette technique et développer de nouvelles fonctionnalités
+      - Amélioration des performances front-end
+      - Modernisation de l'interface utilisateur
+    skills:
+      - AngularJS, JavaScript
+      - Bootstrap, KendoUI
+  - name: Airbus BizLab
+    logo: logo/airbus.png
+    location: Mission avec Sopra Steria
+    startDate: 2016-09-01
+    endDate: 2017-04-30
+    summary: Développement d'une application mobile pour pilotes
+    highlights:
+      - Conception et développement d'une application hybride pour numériser les procédures de vol
+      - Participation active aux décisions architecturales et au design UX/UI
+      - Automatisation des tests et des builds
+    skills:
+      - Ionic, AngularJS, Applications hybrides
+      - Yeoman, Gulp, Karma
+  - name: Sopra Steria
+    logo: logo/soprasteria.png
+    startDate: 2016-04-01
+    endDate: 2016-09-30
+    summary: Stage en R&D - Projets innovants (IA, 3D, mobile)
+    highlights:
+      - Développement de prototypes innovants au sein du Lab Innovation
+      - Prototypage d'un visualiseur 3D pour un salon professionnel (Unity 3D)
+      - Analyseur de rapports militaires avec IA (démonstration à l'Armée de l'Air)
+      - Exploration de technologies émergentes pour des applications tablettes
+    skills:
+      - Unity 3D, Xamarin, Objective-C
+      - Bootstrap
+  - name: Tiki Move
+    logo: logo/tikimove.png
+    startDate: 2011-04-01
+    endDate: 2011-06-30
+    summary: Stage DUT - Développement mobile natif
+    highlights:
+      - Développement d'applications mobiles natives pour iOS et Android
+      - Participation à toutes les étapes du cycle de vie des projets, de la conception à la publication
+      - Découverte des bonnes pratiques en UI/UX pour mobile
+    skills:
+      - Android SDK, Objective-C, Applications natives
+
+education:
+  - institution: Université de Bordeaux
+    logo: logo/bordeaux1.png
+    studyType: Master Informatique
+    area: Génie Logiciel
+    courses:
+      - Conduite de Projet
+      - Programmation Multicœur/GPU
+      - Bioinformatique
+      - Architectures Logicielles Distribuées
+      - Cours complémentaire d'anglais (niveau CLES 2).
+  - institution: IUT Gradignan
+    logo: logo/iut.png
+    studyType: DUT Informatique
+    courses:
+      - Algorithmique
+      - Bases de données
+      - Développement web et mobile
+      - Réseaux.
+
+skills:
+  - name: Langages
+    keywords:
+      - TypeScript
+      - C#
+      - Kotlin
+      - JavaScript
+      - Dart
+      - Java
+      - C++
+      - C
+      - Objective-C
+      - HTML
+  - name: Base de données
+    keywords:
+      - DynamoDB
+      - PostgreSQL
+      - MySQL
+      - CosmoDB
+      - Optimisation des requêtes
+  - name: Frameworks & Bibliothèques
+    keywords:
+      - Node.js
+      - NestJS
+      - .NET Core
+      - Flutter
+      - Hugo
+      - AngularJS
+      - Ionic
+      - Unity 3D
+      - VanillaJS
+  - name: Cloud & DevOps
+    keywords:
+      - AWS
+      - Azure
+      - Docker
+      - Terraform
+      - GitLab CI/CD
+      - IdentityServer
+      - Azure DevOps
+      - TeamCity
+  - name: Outils & Méthodologies
+    keywords:
+      - Git
+      - Jira
+      - Open API
+      - Confluence
+      - Grafana
+      - Prometheus
+      - Agile/Scrum
+      - TDD
+  - name: Architecture Logicielle & Bonnes Pratiques
+    keywords:
+      - Clean Code
+      - DRY
+      - KISS
+      - Architecture en oignon
+      - Postman
+      - Bruno
+  - name: Systèmes & Réseaux
+    keywords:
+      - Linux/Unix
+      - Bash/Shell
+      - Base de la gestion de réseaux
+      - Load balancing
+  - name: Langues
+    keywords:
+      - Anglais courant (TOEIC 850, séjour de 6 mois en Australie)
+
+interests:
+  - name: Développement logiciel
+    keywords:
+      - Participation à des compétitions (Google Code Jam, BattleDev)
+      - Veilles technologiques (Cloud, IoT)
+  - name: Self-hosting
+    keywords:
+      - Gestion de serveurs personnels (Proxmox, Immich, Jellyfin)
+  - name: Rénovation d'une maison
+    keywords:
+      - Electricité
+      - Plomberie
+      - Menuiserie
+  - name: Sports
+    keywords:
+      - Course à pied
+      - Squash
+      - Surf
