@@ -1,0 +1,11 @@
+@mixin respond-to($bp) {
+  @media only screen and (min-width: map-get($breakpoints, $bp)) {
+    @content;
+  }
+}
+
+@mixin respond-below($bp) {
+  @media only screen and (max-width: calc(map-get($breakpoints, $bp) - 1px)) {
+    @content;
+  }
+}

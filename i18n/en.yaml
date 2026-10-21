@@ -1,5 +1,6 @@
 interests: Interests
 skills: Skills
+technical_env: Technical environment
 education: Education
 experiences: Experiences
 see_more: See more
@@ -11,6 +12,7 @@ months_count:
 years_count:
   one: "{{ .Count }}{{ if .Half }}½{{ end }} year"
   other: "{{ .Count }}{{ if .Half }}½{{ end }} years"
+age_suffix: years old
 now: now
 date_to_date:
   other: "{{ .start }} to {{ .end }}"

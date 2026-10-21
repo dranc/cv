@@ -4,13 +4,13 @@
     {{ i18n "experiences" }}
   </h2>
 </div>
-<div class="content lines">
+<div class="content">
   {{ range . }}
   <div class="item not-breakable">
-    <div class="header">
+    <div class="item-header">
       <div class="inline">
         <div class="inline">
-          <img class="logo" src="{{absURL .logo }}" alt="Logo de la société {{.company}}" />
+          <img class="logo" src="{{absURL .logo }}" alt="Logo de la société {{.location}}" />
           <h2 class="important">{{.name}} <span class="less-important"> {{.location}} </span></h2>
         </div>
         <div class="right less-important">

@@ -1,0 +1,38 @@
+header {
+  .info {
+    background-color: $primary-color;
+    color: $background-color;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    .name {
+      font-size: $text-size * 2;
+    }
+
+    .links {
+      padding-top: $small-space / 2;
+      justify-content: start;
+    }
+
+    img#me {
+      height: $space * 7;
+    }
+  }
+
+  .main {
+    text-align: center;
+    margin: 10px;
+
+    .title {
+      color: $primary-color;
+      font-size: $text-size * 1.5;
+      margin: $small-space 0;
+    }
+
+    .description {
+      font-style: italic;
+    }
+  }
+}
