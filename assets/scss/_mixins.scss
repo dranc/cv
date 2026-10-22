@@ -1,3 +1,5 @@
+// Yes I used AI for the scss, I'm not a front end dev ...
+
 @mixin respond-to($bp) {
   @media only screen and (min-width: map-get($breakpoints, $bp)) {
     @content;
