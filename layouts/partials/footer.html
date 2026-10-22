@@ -1,0 +1,10 @@
+{{- $date := now | time.Format ":date_medium" -}}
+{{- $time := now | time.Format "15:04" -}}
+<footer>
+  <p>{{ i18n "generated_on" (dict "Date" $date "Time" $time) }}</p>
+  <nav class="lang-switcher">
+    {{ range .languages }}
+    <a href="{{ absURL .Lang }}"{{ if eq .Lang $.currentLang }} class="current"{{ end }}>{{ .LanguageName }}</a>
+    {{ end }}
+  </nav>
+</footer>

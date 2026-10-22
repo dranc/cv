@@ -1,0 +1,25 @@
+footer {
+  display: flex;
+  align-items: center;
+  gap: $space;
+  width: fit-content;
+  margin: 0 auto;
+  padding: $small-space/2 $space;
+  font-size: 80%;
+  color: lighten($text-color, 50%);
+
+  a {
+    color: lighten($text-color, 45%);
+    font-size: 130%;
+
+    &.current {
+      opacity: 0.35;
+      cursor: default;
+      pointer-events: none;
+    }
+  }
+
+  @media print {
+    display: none;
+  }
+}

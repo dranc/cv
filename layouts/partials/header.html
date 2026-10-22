@@ -9,7 +9,7 @@
       <p title='{{ .basics.birthDate | time.Format ":date_medium" }}'>
         {{ $now := now }} {{ $birth := time .basics.birthDate }} {{ $age := sub ($now.Year) ($birth.Year) }} {{ if or (lt
         $now.Month $birth.Month) (and (eq $now.Month $birth.Month) (lt $now.Day $birth.Day)) }} {{ $age = sub $age 1 }} {{
-        end }} {{ $age }} ans
+        end }} {{ $age }} {{ i18n "age_suffix" }}
       </p>
       <div class="links inline">
         <div>
@@ -20,14 +20,6 @@
           {{.username}} {{ end }}
         </div>
         
-        <div class="inline hoverable">
-          <a class="my-site" href="{{.basics.url}}">cv.dranc.dev</a>
-          <div class="hover">
-            {{ range .languages }}
-            <a href="{{absURL .Lang}}">{{.LanguageName}}</a>
-            {{ end }}
-          </div>
-          </div>
       </div>
     </div>
     <div>
@@ -37,5 +29,5 @@
   <div class="main">
     <h1 id="t" class="title">{{ .basics.label }}</h1>
     <p id="d" class="description">{{ .basics.summary }}</p>
-  </header>
-</div>
+  </div>
+</header>

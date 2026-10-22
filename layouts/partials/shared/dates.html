@@ -1,18 +1,14 @@
-{{- $start := (time .start) -}}
+{{- $start := time .start -}}
 {{- $now := now -}}
+{{- $end := time (default $now .end) -}}
 
-{{- $end :=  (time (default $now .end)) -}}
-{{- $endStr := cond (eq (time.Format "2006-01" $now) (time.Format "2006-01" $end)) (i18n "now") (time.Format "Jan 2006" $end ) -}}
+{{- $isCurrentMonth := eq (time.Format "2006-01" $now) (time.Format "2006-01" $end) -}}
+{{- $endStr := cond $isCurrentMonth (i18n "now") (time.Format "Jan 2006" $end) -}}
+{{- $startStr := time.Format (cond (eq $start.Year $end.Year) "Jan" "Jan 2006") $start -}}
 
-{{- $startStr := time.Format (cond (eq $start.Year $end.Year) "Jan" "Jan 2006") $start  -}}
-
-{{- $elapsed_seconds := sub ($end.Unix) ($start.Unix) -}}
-{{- $seconds_in_a_month := mul 60 60 24 30 }}
-{{- $elapsed_months := (div $elapsed_seconds $seconds_in_a_month) -}}
-
-{{- $years := (div $elapsed_months 12) -}}
-{{- $yearsAsString := (cond (gt $years 0) (i18n "years_count" (dict "Count" $years)) "" ) -}}
-{{- $months := (mod $elapsed_months 12) -}}
+{{- $elapsedMonths := div (sub $end.Unix $start.Unix) (mul 60 60 24 30) -}}
+{{- $years := div $elapsedMonths 12 -}}
+{{- $months := mod $elapsedMonths 12 -}}
 
 <h2>{{ i18n "date_to_date" (dict "start" $startStr "end" $endStr) }}</h2>
 {{- if gt $years 0 -}}
