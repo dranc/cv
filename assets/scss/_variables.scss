@@ -1,0 +1,13 @@
+$primary-color: #396485;
+$background-color: #f4f4f4;
+$text-color: #333;
+$small-space: 10px;
+$space: $small-space * 3;
+$text-size: 16px;
+
+$breakpoints: (
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+);

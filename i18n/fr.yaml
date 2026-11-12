@@ -12,6 +12,7 @@ months_count:
 years_count:
   one: '{{ .Count }}{{ if .Half }}½{{ end }} an'
   other: '{{ .Count }}{{ if .Half }}½{{ end }} ans'
+age_suffix: ans
 now: ce jour
 date_to_date:
   other: '{{ .start }} à {{ .end }}'
